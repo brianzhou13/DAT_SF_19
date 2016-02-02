@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Thal <= 3.5\ngini = 0.4968\nsamples = 302\nvalue = [163, 139]"] ;
+1 [label="Ca <= 0.5\ngini = 0.3464\nsamples = 166\nvalue = [129, 37]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Trestbps <= 157.0\ngini = 0.2005\nsamples = 115\nvalue = [102, 13]"] ;
+1 -> 2 ;
+3 [label="gini = 0.1515\nsamples = 109\nvalue = [100, 9]"] ;
+2 -> 3 ;
+4 [label="gini = 0.4444\nsamples = 6\nvalue = [2, 4]"] ;
+2 -> 4 ;
+5 [label="CP <= 3.5\ngini = 0.4983\nsamples = 51\nvalue = [27, 24]"] ;
+1 -> 5 ;
+6 [label="gini = 0.3496\nsamples = 31\nvalue = [24, 7]"] ;
+5 -> 6 ;
+7 [label="gini = 0.255\nsamples = 20\nvalue = [3, 17]"] ;
+5 -> 7 ;
+8 [label="CP <= 3.5\ngini = 0.375\nsamples = 136\nvalue = [34, 102]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Ca <= 0.5\ngini = 0.4978\nsamples = 45\nvalue = [24, 21]"] ;
+8 -> 9 ;
+10 [label="gini = 0.417\nsamples = 27\nvalue = [19, 8]"] ;
+9 -> 10 ;
+11 [label="gini = 0.4012\nsamples = 18\nvalue = [5, 13]"] ;
+9 -> 11 ;
+12 [label="Oldpeak <= 0.55\ngini = 0.1956\nsamples = 91\nvalue = [10, 81]"] ;
+8 -> 12 ;
+13 [label="gini = 0.4628\nsamples = 22\nvalue = [8, 14]"] ;
+12 -> 13 ;
+14 [label="gini = 0.0563\nsamples = 69\nvalue = [2, 67]"] ;
+12 -> 14 ;
+}
