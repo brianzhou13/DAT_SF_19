@@ -1,0 +1,16 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="is_weekend <= 0.5\ngini = 0.3828\nsamples = 5142\nvalue = [3816, 1326]"] ;
+1 [label="num_hrefs <= 13.5\ngini = 0.3648\nsamples = 4513\nvalue = [3430, 1083]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.3445\nsamples = 3794\nvalue = [2955, 839]"] ;
+1 -> 2 ;
+3 [label="gini = 0.4484\nsamples = 719\nvalue = [475, 244]"] ;
+1 -> 3 ;
+4 [label="global_rate_positive_words <= 0.0616\ngini = 0.4742\nsamples = 629\nvalue = [386, 243]"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="gini = 0.4874\nsamples = 530\nvalue = [307, 223]"] ;
+4 -> 5 ;
+6 [label="gini = 0.3224\nsamples = 99\nvalue = [79, 20]"] ;
+4 -> 6 ;
+}

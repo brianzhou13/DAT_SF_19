@@ -16,12 +16,13 @@ import scrapy
 class MashableItem(scrapy.Item):
 	
 	mash_items = pd.read_csv("OnlineNewsPopularity_inscrapy.csv")
-	mash_url_only = mash_items.url.head(100)
+	mash_url_only = mash_items.url
 	mash_url_only = mash_url_only.tolist() #turns the series into a list
 
 	title = scrapy.Field() #done
 	h1 = scrapy.Field() #done
 	author = scrapy.Field() #done
+	body_content = scrapy.Field() #not done yet
 
 	#example labels
 	description = scrapy.Field() #done
